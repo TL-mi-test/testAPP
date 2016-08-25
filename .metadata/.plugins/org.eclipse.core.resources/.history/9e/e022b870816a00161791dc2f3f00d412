@@ -1,0 +1,115 @@
+package com.example.entity;
+
+public class personPhoneSearch {
+	private Integer pmPersonId;
+	private String familyName;
+	private String firstName;
+	private Integer age;
+	private Boolean pmValidity;
+	private Integer listId;
+	private Integer plPersonId;
+	private String phoneNumber;
+	private Boolean mobileFlag;
+	private Boolean plValidity;
+
+	private personMaster personMaster;
+	private phoneList phoneList;
+
+	public personPhoneSearch(){
+	}
+
+	public personPhoneSearch(personMaster personMaster, phoneList phoneList){
+		super();
+		this.pmPersonId = personMaster.getPersonId();
+		this.familyName = personMaster.getFamilyName();
+		this.firstName = personMaster.getFirstName();
+		this.age = personMaster.getAge();
+		this.pmValidity = personMaster.getValidity();
+		this.listId = phoneList.getListId();
+		this.plPersonId = phoneList.getPersonId();
+		this.phoneNumber = phoneList.getPhoneNumber();
+		this.mobileFlag = phoneList.getMobileFlag();
+		this.plValidity = phoneList.getValidity();
+	}
+
+	public void setPmPersonId (Integer pmPersonId){
+		this.pmPersonId = pmPersonId;
+	}
+
+	public Integer getPmPersonId (){
+		return this.pmPersonId;
+	}
+
+	public void setFamilyName (String familyName){
+		this.familyName = familyName;
+	}
+
+	public String getFamilyName (){
+		return this.familyName;
+	}
+
+	public void setFirstName (String firstName){
+		this.firstName = firstName;
+	}
+
+	public String getFirstName (){
+		return this.firstName;
+	}
+
+	public void setAge (Integer age){
+		this.age = age;
+	}
+
+	public Integer getAge (){
+		return this.age;
+	}
+
+	public void setPmValidity (Boolean pmValidity){
+		this.pmValidity = pmValidity;
+	}
+
+	public Boolean getPmValidity (){
+		return this.pmValidity;
+	}
+
+	public void setListId (Integer listId){
+		this.listId = listId;
+	}
+
+	public Integer getListId (){
+		return this.listId;
+	}
+
+	public void setPlPersonId (Integer plPersonId){
+		this.plPersonId = plPersonId;
+	}
+
+	public Integer getPlPersonId (){
+		return this.plPersonId;
+	}
+
+	public void setPhoneNumber (String phoneNumber){
+		this.phoneNumber = phoneNumber;
+	}
+
+	public String getPhoneNumber (){
+		return this.phoneNumber;
+	}
+
+	public void setMobileFlag (Boolean mobileFlag){
+		this.mobileFlag = mobileFlag;
+	}
+
+	public Boolean getMobileFlag (){
+		return this.mobileFlag;
+	}
+
+	public void setPlValidity (Boolean plValidity){
+		this.plValidity = plValidity;
+	}
+
+	public Boolean getPlValidity (){
+		return this.plValidity;
+	}
+
+}

@@ -1,0 +1,33 @@
+package com.example;
+
+import java.util.Iterator;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import com.example.repository.PersonPhoneSearchRepository;
+import com.example.entity.*;
+
+@Controller
+public class PersonPhoneSearchController {
+	@Autowired
+	PersonPhoneSearchRepository personPhoneSearchRepository;
+
+	@RequestMapping("/personPhoneSearch")
+	public String index(Model model) {
+		Iterable <PersonPhoneSearch> personPhoneSearch = personPhoneSearchRepository.findPersonPhoneListAll();
+
+		int personPhoneCount = 0;
+		Iterator<PersonPhoneSearch> it = personPhoneSearch.iterator();
+		while(it.hasNext()){
+			it.next();
+			personPhoneCount++;
+		}
+		model.addAttribute("dataSize", personPhoneCount);
+		model.addAttribute("data", personPhoneSearch);
+
+		return "index";
+	}
+}

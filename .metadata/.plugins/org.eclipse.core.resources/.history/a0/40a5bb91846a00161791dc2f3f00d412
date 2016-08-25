@@ -1,0 +1,42 @@
+<html lang="jp">
+    <head>
+        <meta charset="utf-8" />
+        <!-- meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /-->
+        <!-- link rel="stylesheet" href="css/css.css" type="text/css" media="screen"/ -->
+        <!-- link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" /-->
+        <!-- script type="text/javascript" src="js/index.js"></script -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link href="/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+            <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+        <title>あぷりどうさかくにん</title>
+    </head>
+    <body>
+        <div id="container-inner">
+            <div id="contents">
+                <!-- コンテンツここから -->
+                <p>data : <label th:text="${dataSize}"></label>件</p>
+                <div class="container-fluid">
+                    <table class="table table-striped">
+                        <thead>
+                            <th>No</th>
+                            <th>data</th>
+                        </thead>
+                        <tr th:each="d : ${data}">
+
+                            <td><span th:text="${d.id}"></span></td>
+                            <td><span th:text="${d.value}"></span></td>
+
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="/bootstrap/js/bootstrap.min.js"></script>
+    <!-- script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script -->
+    </body>
+</html>

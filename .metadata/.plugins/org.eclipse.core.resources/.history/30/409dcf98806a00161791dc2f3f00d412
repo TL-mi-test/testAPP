@@ -1,0 +1,34 @@
+package com.example.entity;
+
+public class personPhoneSearch {
+	private Integer pmPersonId;
+	private String familyName;
+	private String firstName;
+	private Integer age;
+	private Boolean pmValidity;
+	private Integer listId;
+	private Integer plPersonId;
+	private String phoneNumber;
+	private Boolean mobileFlag;
+	private Boolean plValidity;
+
+	private personMaster personMaster;
+	private phoneList phoneList;
+
+	public personPhoneSearch(){
+	}
+
+	public personPhoneSearch(personMaster personMaster, phoneList phoneList){
+		super();
+		this.pmPersonId = personMaster.getPersonId();
+		this.familyName = personMaster.getFamilyName();
+		this.firstName = personMaster.getFirstName();
+		this.age = personMaster.getAge();
+		this.pmValidity = personMaster.getValidity();
+		this.listId = phoneList.getListId();
+		this.plPersonId = phoneList.getPersonId();
+		this.phoneNumber = phoneList.getPhoneNumber();
+		this.mobileFlag = phoneList.getMobileFlag();
+		this.plValidity = phoneList.getValidity();
+	}
+}
