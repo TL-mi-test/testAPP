@@ -24,14 +24,12 @@
                         <thead>
                             <th>FamilyName</th>
                             <th>FirstName</th>
-                            <th>Age</th>
                             <th>PhoneNumber</th>
                         </thead>
                         <tr th:each="d : ${data}">
 
                             <td><span th:text="${d.PersonMaster.familyName}"></span></td>
                             <td><span th:text="${d.PersonMaster.firstName}"></span></td>
-                            <td><span th:text="${d.PersonMaster.age}"></span></td>
                             <td><span th:text="${d.phoneNumber}"></span></td>
 
                         </tr>
