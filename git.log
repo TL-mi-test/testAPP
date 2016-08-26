@@ -1,0 +1,61 @@
+*   commit 3b450786ccb4b5536ea540b5fd75536754a18a8c
+|\  Merge: 434f532 7ea9dd0
+| | Author: TL-mi-test <imai-masashi@technolive.co.jp>
+| | Date:   Thu Aug 25 17:55:55 2016 +0900
+| | 
+| |     Merge branch 'develop'
+| |     
+| *   commit 7ea9dd0c0d67cc275bf5ff643ca3d4cb258d73e1
+| |\  Merge: 8232ec2 9934f9d
+| | | Author: TL-mi-test <imai-masashi@technolive.co.jp>
+| | | Date:   Thu Aug 25 17:52:10 2016 +0900
+| | | 
+| | |     fix conflict on PersonPhoneSearchRepository.java
+| | |    
+| | * commit 9934f9d7e63a6b2715f10a9ec3e2d4bf67ff64b7
+| | | Author: TL-mi-test <imai-masashi@technolive.co.jp>
+| | | Date:   Thu Aug 25 16:53:24 2016 +0900
+| | | 
+| | |     No.4 ran
+| | |    
+| * | commit 8232ec21a8390cb934d071d38031d4d3c59a889b
+| | | Author: TL-mi-test <imai-masashi@technolive.co.jp>
+| | | Date:   Thu Aug 25 17:37:11 2016 +0900
+| | | 
+| | |     recommit No.7
+| | |    
+| * | commit 36acbd8c98fd0d459b47c9d2aa254f7ffcf11da5
+| |/  Author: TL-mi-test <imai-masashi@technolive.co.jp>
+| |   Date:   Thu Aug 25 17:03:22 2016 +0900
+| |   
+| |       add tag and add ignore
+| |   
+| * commit da21a989b2f9728bbdd7c6cac47faf286a4473dd
+| | Author: TL-mi-test <imai-masashi@technolive.co.jp>
+| | Date:   Thu Aug 25 16:21:04 2016 +0900
+| | 
+| |     No.3 deleted unnecessary files
+| |   
+| * commit 31350ef858808132108abccad62efe5fbd8f56ed
+| | Author: TL-mi-test <imai-masashi@technolive.co.jp>
+| | Date:   Thu Aug 25 16:18:00 2016 +0900
+| | 
+| |     No.3 ran
+| |   
+| * commit 939904fb1fba2d7ac7496ccea0e1a91c9b2ed218
+|/  Author: TL-mi-test <imai-masashi@technolive.co.jp>
+|   Date:   Thu Aug 25 13:23:09 2016 +0900
+|   
+|       added flyway initialize
+|  
+* commit 434f532bf791f4de9441dfae3316359ca1309695
+| Author: TL-mi-test <imai-masashi@technolive.co.jp>
+| Date:   Thu Aug 25 11:52:28 2016 +0900
+| 
+|     project initialized
+|  
+* commit adf677f63df0911d794ecc4d381de4e2c9b92b01
+  Author: TL-mi-test <imai-masashi@technolive.co.jp>
+  Date:   Thu Aug 25 11:30:53 2016 +0900
+  
+      Initial commit
